@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+    <style>
+      .module {
+        height: 100vh; /* Credits go to Louis Hoebregts on CSS-Tricks: https://css-tricks.com/the-trick-to-viewport-units-on-mobile. Use vh as a fallback for browsers that do not support Custom Properties */
+        height: calc(var(--vh, 1vh) * 100);
+      }
+    </style>
+    <title>Embrace Espire</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+      // Credits go to Louis Hoebregts on CSS-Tricks: https://css-tricks.com/the-trick-to-viewport-units-on-mobile
+      let vh = window.innerHeight * 0.01;
+      // Then we set the value in the --vh custom property to the root of the document
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+      // We listen to the resize event
+      window.addEventListener("resize", () => {
+        // We execute the same script as before
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+      });
+    </script>
+    <script>
+      function delay(URL) {
+        setTimeout(function () {
+          window.location = URL;
+        }, 850);
+      }
+    </script>
+  </body>
+</html>

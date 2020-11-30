@@ -1,0 +1,227 @@
+/********** GENERAL STYLING SPLIDE SLIDER **********/
+.splide__arrow--prev {
+  left: 0.6em;
+}
+
+.splide__arrow--next {
+  right: 0.6em;
+}
+
+.splide__progress__bar {
+  background-color: #5a28ff;
+}
+
+.splide__arrow svg {
+  color: white;
+  fill: white;
+}
+
+.feature-slider-arrow {
+  top: 65%;
+}
+
+.feature-slider-arrow svg {
+  color: black;
+  fill: black;
+}
+
+.team-slider-arrow {
+  top: 76.5%;
+}
+
+.team-slider-arrow svg {
+  color: black;
+  fill: black;
+}
+
+.feature-slider-prev {
+  left: -0.3em;
+}
+
+.feature-slider-next {
+  right: -0.3em;
+}
+
+.splide__arrow {
+  background: none;
+}
+
+.splide__pagination__page {
+  margin: 0 6px 5px;
+  background-color: #a7a7a7;
+  height: 10px;
+  width: 10px;
+}
+.splide__pagination__page.is-active {
+  background-color: #222323;
+  transform: scale(1);
+}
+
+.grid-mobile {
+  z-index: 0;
+}
+
+/********** Styling: Testimonial-Slider **********/
+
+.testimonial-slider-pagination {
+  width: 40%;
+}
+
+.testimonial-slider-page {
+  margin: 0 6px 5px;
+  background-color: #9d7fff;
+  height: 10px;
+  width: 10px;
+}
+.testimonial-slider-page.is-active {
+  background-color: white;
+  transform: scale(1);
+  opacity: 1;
+  opacity: 1;
+}
+
+.splide__arrow {
+  opacity: 0.5;
+}
+
+/**********Styling: Development-Slider**********/
+
+.development-slider-arrow svg {
+  color: black;
+  fill: black;
+}
+
+.development-slider-pagination {
+  position: absolute;
+  width: 40%;
+  bottom: 5.5%;
+  top: auto;
+}
+
+.development-slider-page {
+  margin: 0 6px 5px;
+  height: 10px;
+  width: 10px;
+}
+
+/********** MEDIA QUERIES **********/
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .wrapper {
+    display: none;
+  }
+  .rotate-phone {
+    display: flex;
+    height: 100vh;
+    margin: 0% auto 25%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .rotate-phone .logo-rotate {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (orientation: portrait) {
+  .development-slider-pagination {
+    position: absolute;
+    width: 40%;
+    bottom: 10.5%;
+    top: auto;
+  }
+  .development-slider-prev {
+    left: 0em;
+  }
+  .development-slider-next {
+    right: 0em;
+  }
+}
+
+@media only screen and (min-height: 740px) and (max-height: 823px) and (orientation: portrait) {
+  .team-slider-image-1._1,
+  .team-slider-image-2._1,
+  .team-slider-image-3._1,
+  .team-slider-image-4._1 {
+    bottom: 5%;
+    width: 70.5%;
+    padding-bottom: 70.5%;
+  }
+  .hero-image.module {
+    background-position: 17% 0%;
+    background-size: 325%;
+  }
+  .team-slider-arrow {
+    top: 68.5%;
+  }
+  .splide__pause.development-pause {
+    margin-left: -15px;
+  }
+  .splide__play.developmant-play {
+    margin-left: -15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .left-goal-text {
+    height: 155px;
+  }
+  .text-box-goal.goal {
+    margin-top: 110px;
+  }
+  .text-block-features {
+    font-size: 12px;
+  }
+  .splide__pause.development-pause {
+    margin-left: -25px;
+  }
+  .splide__play.developmant-play {
+    margin-left: -25px;
+  }
+  .development-slider-pagination {
+    width: 42%;
+  }
+  .features-slider-image._1,
+  .features-slider-image._2,
+  .features-slider-image._3,
+  .features-slider-image._4 {
+    width: 85%;
+    height: 85%;
+  }
+  .feature-slider-arrow {
+    top: 75%;
+  }
+  .espire-image {
+    height: 55px;
+    width: 55px;
+  }
+  .company-logo-collumn {
+    margin-bottom: 20px;
+  }
+  .column-left-contact {
+    margin-top: 60px;
+  }
+  .message-box {
+    height: 30px;
+  }
+  .form {
+    margin-top: 50px;
+  }
+  .contact-form-text {
+    margin-bottom: 0px;
+  }
+  .grid-socials {
+    margin: 5px 0 5px 0;
+  }
+}
